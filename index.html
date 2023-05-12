@@ -1,10 +1,5 @@
 <!doctype html>
-<!--
-	Author by FreeHTML5.co
-	Twitter: https://twitter.com/fh5co
-	Facebook: https://fb.com/fh5co
-	URL: https://freehtml5.co
--->
+
 <html lang="en">
 <head>
 	<!-- Required meta tags -->
@@ -20,11 +15,11 @@
 	<nav class="site-navigation">
 		<div class="site-navigation-inner site-container">
 			<div></div>
-			<div class="main-navigation">
-				<ul class="main-navigation__ul">
-					<li><a href="#">About Me</a></li>
-					<li><a href="#">Project</a></li>
-					<li><a href="#">Contact</a></li>
+			<div class="main-navigation " >
+				<ul class="main-navigation__ul burger-container">
+					<li><a href="#about"><span>About me</span> </a></li>
+					<li><a href="#project"><span>Project</span></a></li>
+					<li><a href="#contact"><span>Contact</span></a></li>
 				</ul>
 			</div>
 			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
@@ -68,7 +63,7 @@
 	<!-- Top banner end -->
 
 	<!-- About me -->
-	<section class="fh5co-about-me">
+	<section id="about" class="fh5co-about-me">
 		<div class="about-me-inner site-container">
 			<article class="portfolio-wrapper">
 				<div class="portfolio__img">
@@ -103,8 +98,8 @@
 	</section>
 	<!-- About me end -->
 
-		<!-- Blog -->
-	<section class="fh5co-blog">
+	<!-- My Project -->
+	<section id="project" class="fh5co-blog">
 		<div class="site-container">
 			<h2 class="universal-h2 universal-h2-bckg">My Project</h2>
 			<div class="blog-slider blog-inner">
@@ -141,46 +136,47 @@
 			</div>
 		</div>
 	</section>
-	<!-- Blog end -->
+	<!-- My Project end -->
 
 
-	<!-- Social -->
+	<!-- My ToolKit -->
 	<section class="fh5co-social">
-		<div class="site-container">
-				
-
+		<!-- <div class="site-container">
 			<div class="social">
-
 				<div class="social-icons">
-					<h5>My Toolkit</h5> <br><br>
-					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
-					<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
+					<h5>My Toolkit 💻</h5> <br><br><br>
+					<a href="#" target="_blank"><img src="./images/vscode.png" style="width: 60%;" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/github.png" style="width: 60%;" alt="social icon"></a>
 					<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
 					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</section>
-	<!-- Social -->
+	<!-- ToolKit -->
 
 	<!-- Footer -->
-	<footer class="site-footer">
+	<footer id="contact" class="site-footer">
 		<div class="site-container">
 			<div class="footer-inner">
 				<div class="footer-info">
-					<div class="footer-info__left">
+					<!-- <div class="footer-info__left">
 						<img src="./images/footer-img.jpg" alt="about me image">
 						<p>Read more about me</p>
-					</div>
+					</div> -->
 					<div class="footer-info__right">
-						<h5>Get In Touch</h5>
-						<p class="footer-phone">Phone: +958734902847</p>
-						<p>Email : Jhone@Example.com</p>
+						<h5>Get In Touch📞</h5>
+						<!-- <p class="footer-phone">Phone: +958734902847</p> -->
+						<p>If you ever want to grab a coffee/bubble 
+							<br> tea 
+							<span style="font-family: NanumPenScript-Regular; color:  #c18f59;">(virtually)
+							</span> or just want a quick chat - 
+							<br>you can find me on social media or you can send me a message here!</p>
 						<div class="social-icons">
-							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
-							<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
-							<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
-							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+							<a href="https://www.linkedin.com/in/vini-jumatul-fitri-303190179/" target="_blank"><img src="./images/linkedin.png" style="width: 60%;" alt="social icon"></a>
+							<a href="https://www.instagram.com/vinijf_/" target="_blank"><img src="./images/instagram.png" style="width: 60%;" alt="social icon"></a>
+							<a href="https://github.com/vinijf01" target="_blank"><img src="./images/github.png" style="width: 60%;" alt="social icon"></a>
+							<!-- <a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a> -->
 						</div>
 					</div>
 				</div>
@@ -191,24 +187,16 @@
 							<input type="text" name="name" placeholder="Name">
 							<input type="email" name="email" placeholder="Email">
 						</div>
-						<textarea></textarea>
-						<input type="submit" name="submit" value="Submit" class="submit-button">
+						<textarea name="message" placeholder="Message"></textarea>
+						<input type="submit" name="submit" value="Send Message" class="submit-button">
 					</form>
 				</div>
 			</div>
 		</div>
 		<div class="footer-bottom">
 			<div class="site-container footer-bottom-inner">
-				<p>© 2019 Author | Design by <a href="https://freehtml5.co/" target="_blank">freehtml5.co</a> | All rights Reserved.</p>
-				<div class="footer-bottom__img">
-					<img src="./images/footer-mastercard.png" alt="footer image">
-					<img src="./images/footer-paypal.png" alt="footer image">
-					<img src="./images/footer-visa.png" alt="footer image">
-					<img src="./images/footer-fedex.png" alt="footer image">
-					<img src="./images/footer-dhl.png" alt="footer image">
-				</div>
-			</div>
-		</div>
+				<p>🌻Vini Jumatul Fitri🌻</p>
+		   </div> 
 	</footer>
 	<!-- Footer end -->
 

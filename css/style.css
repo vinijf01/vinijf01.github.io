@@ -17,8 +17,13 @@
   font-family: 'Calisto-MT-Bold';
   src: url(../fonts/Calisto-MT-Bold.ttf); }
 
+  @font-face {
+    font-family: 'NanumPenScript-Regular';
+    src: url(../fonts/NanumPenScript-Regular.ttf); }
+
 /* Colors */
 /* Universal style */
+
 
 * {
   margin: 0;
@@ -51,7 +56,7 @@
 /* Universal style end */
 /* Includes */
 .site-navigation {
-  position: absolute;
+  position: fixed;
   top: 4.6%;
   width: 100%;
   z-index: 2; }
@@ -89,7 +94,8 @@
       font-weight: 600;
       text-decoration: none;
       text-transform: uppercase;
-      transition: 0.3s ease; }
+      transition: 0.3s ease-out;
+     }
       .main-navigation .main-navigation__ul a:hover {
         color: #777; }
   @media (max-width: 1150px) {
@@ -108,20 +114,20 @@
   margin: 6px 0;
   transition: 0.4s; }
 
-.change .bar1 {
-  transform: rotate(-45deg) translate(-6px, 6px);
-  background-color: #c18f59; }
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+    background-color: #c18f59; }
+  
+  .change .bar2 {
+    opacity: 0;
+    background-color: #c18f59; }
+  
+  .change .bar3 {
+    transform: rotate(45deg) translate(-6px, -7px);
+    background-color: #c18f59; }
 
-.change .bar2 {
-  opacity: 0;
-  background-color: #c18f59; }
-
-.change .bar3 {
-  transform: rotate(45deg) translate(-6px, -7px);
-  background-color: #c18f59; }
-
-.stop-scroll {
-  overflow: hidden; }
+/* .stop-scroll {
+  overflow: hidden; } */
 
 /* Navigation burger end */
 .fh5co-top-banner {
@@ -239,7 +245,7 @@
   text-decoration: none;
   color: #c18f59;
   border: 1px solid #fff;
-  transition: 0.3s ease; }
+  transition: 0.3s ease-in; }
   .brand-button:hover, .brand-button:focus {
     color: #777; }
 
@@ -691,7 +697,7 @@
 
 .fh5co-social {
   position: relative;
-  padding: 63px 0;
+  padding: 6px 0;
   background-image: url("../images/social-bckg.jpg");
   background-size: cover;
   background-position: center; }
@@ -850,7 +856,8 @@
   display: flex;
   justify-content: space-between; }
   .footer-bottom-inner p {
-    color: #777; }
+    color: #777;
+     }
   .footer-bottom-inner a {
     color: #c18f59;
     text-decoration: none;
