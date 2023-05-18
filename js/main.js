@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(document).ready(function() 
+{
 
 	
 	/* Navigation burger onclick side navigation show */
@@ -20,9 +21,9 @@ $(document).ready(function() {
 		nextArrow: '<span class="span-arrow slick-next">></span>'
 	});
 
-	/* Blog slider */
+	/* Project slider */
 	$('.blog-slider').slick({
-		slidesToShow: 2,
+		slidesToShow: 1,
 		prevArrow: '<span class="span-arrow slick-prev"><</span>',
 		nextArrow: '<span class="span-arrow slick-next">></span>',
 		responsive: [

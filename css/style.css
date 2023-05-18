@@ -130,11 +130,12 @@
   overflow: hidden; } */
 
 /* Navigation burger end */
+
 .fh5co-top-banner {
   position: relative;
   display: flex;
   align-items: flex-end;
-  background-image: url("../images/bg.png");
+  background-image: url("../images/banner.jpg");
   background-position: center;
   background-size: cover; }
   .fh5co-top-banner::after {
@@ -370,18 +371,29 @@
 .about-me__text {
   width: 44%;
   margin-right: 80px;
-  text-align: center; }
+  text-align: left; }
   .about-me__text .universal-h2 {
     color: #fff;
     padding-bottom: 20px;
     margin-bottom: 25px; }
   .about-me__text p {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     line-height: 24px;
     color: #c18f59; }
     .about-me__text p span {
       font-size: 48px;
       color: #fff; }
+
+    .about-me__text ul{
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #c18f59; 
+      margin-bottom: 10px;
+    }
+    .about-me__text li{
+      margin-bottom: 5px;
+      color: #c18f59; 
+    }
     @media (max-width: 620px) {
       .about-me__text p {
         margin-bottom: 20px;
@@ -570,13 +582,22 @@
     font-size: 0; }
   .single-blog .single-blog__text {
     width: 50%;
-    padding: 7%;
+    padding: 3%;
+    padding-left: 5%;
     border: 3px solid #f5f5f5;
     border-left: 0; }
     .single-blog .single-blog__text h4 {
       margin-bottom: 5px;
       font-size: 24px;
       line-height: 33px; }
+    .single-blog .single-blog__text a {
+      color: #c18f59; /* mengganti warna menjadi merah */
+      text-decoration: none; /* menghilangkan garis bawah */
+    }
+    .single-blog .single-blog__text a:hover {
+      color: #e17909;
+     /* mengganti warna menjadi hijau ketika mouse diarahkan ke link */
+    }
     .single-blog .single-blog__text span {
       display: block;
       margin-bottom: 15px;
